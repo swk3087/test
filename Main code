@@ -1,0 +1,317 @@
+5s
+
+Current runner version: '2.296.0'
+
+Operating System
+
+Runner Image
+
+Runner Image Provisioner
+
+GITHUB_TOKEN Permissions
+
+Secret source: Actions
+
+Prepare workflow directory
+
+Prepare all required actions
+
+Getting action download info
+
+Download action repository 'actions/checkout@v2' (SHA:7884fcad6b5d53d10323aee724dc68d8b9096a2e)
+
+Download action repository 'actions/jekyll-build-pages@v1' (SHA:9b882383c88a22eef81e9c1a5a232c2ff9a6672b)
+
+Download action repository 'actions/upload-pages-artifact@v0' (SHA:5abd6d2e035406f412d089536ee922a104d12f2b)
+
+Getting action download info
+
+Download action repository 'actions/upload-artifact@main' (SHA:3cea5372237819ed00197afe530f5a7ea3e805c8)
+
+20s
+
+Pull down action image 'ghcr.io/actions/jekyll-build-pages:v1.0.4'
+
+2s
+
+Run actions/checkout@v2
+
+Syncing repository: swk3087/test
+
+Getting Git version info
+
+Temporarily overriding HOME='/home/runner/work/_temp/f490b520-9b79-43c6-a64c-22b3ee5bf846' before making global git config changes
+
+Adding repository directory to the temporary git global config as a safe directory
+
+/usr/bin/git config --global --add safe.directory /home/runner/work/test/test
+
+Deleting the contents of '/home/runner/work/test/test'
+
+Initializing the repository
+
+Disabling automatic garbage collection
+
+Setting up auth
+
+Fetching the repository
+
+Determining the checkout info
+
+Checking out the ref
+
+Setting up auth for fetching submodules
+
+Fetching submodules
+
+Persisting credentials for submodules
+
+/usr/bin/git log -1 --format='%H'
+
+'22c4920e7fd0f29f6c0307dd7564dd09042284aa'
+
+4s
+
+Run actions/jekyll-build-pages@v1
+
+/usr/bin/docker run --name ghcrioactionsjekyllbuildpagesv104_782cbe --label 229416 --workdir /github/workspace --rm -e "INPUT_SOURCE" -e "INPUT_DESTINATION" -e "INPUT_FUTURE" -e "INPUT_BUILD_REVISION" -e "INPUT_VERBOSE" -e "INPUT_TOKEN" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_ACTOR" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_ID_TOKEN_REQUEST_URL" -e "ACTIONS_ID_TOKEN_REQUEST_TOKEN" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/test/test":"/github/workspace" ghcr.io/actions/jekyll-build-pages:v1.0.4
+
+Configuration file: none
+
+  Logging at level: debug
+
+      GitHub Pages: github-pages v227
+
+      GitHub Pages: jekyll v3.9.2
+
+             Theme: jekyll-theme-primer
+
+      Theme source: /usr/local/bundle/gems/jekyll-theme-primer-0.6.0
+
+         Requiring: jekyll-github-metadata
+
+To use retry middleware with Faraday v2.0+, install `faraday-retry` gem
+
+         Requiring: jekyll-seo-tag
+
+         Requiring: jekyll-coffeescript
+
+         Requiring: jekyll-commonmark-ghpages
+
+         Requiring: jekyll-gist
+
+         Requiring: jekyll-github-metadata
+
+         Requiring: jekyll-paginate
+
+         Requiring: jekyll-relative-links
+
+         Requiring: jekyll-optional-front-matter
+
+         Requiring: jekyll-readme-index
+
+         Requiring: jekyll-default-layout
+
+         Requiring: jekyll-titles-from-headings
+
+   GitHub Metadata: Initializing...
+
+            Source: /github/workspace/.
+
+       Destination: /github/workspace/./_site
+
+ Incremental build: disabled. Enable with --incremental
+
+      Generating... 
+
+        Generating: JekyllOptionalFrontMatter::Generator finished in 4.0404e-05 seconds.
+
+        Generating: JekyllReadmeIndex::Generator finished in 6.3206e-05 seconds.
+
+        Generating: Jekyll::Paginate::Pagination finished in 5.3e-06 seconds.
+
+        Generating: JekyllRelativeLinks::Generator finished in 1.6302e-05 seconds.
+
+        Generating: JekyllDefaultLayout::Generator finished in 3.2903e-05 seconds.
+
+        Generating: JekyllTitlesFromHeadings::Generator finished in 1.0401e-05 seconds.
+
+         Rendering: assets/css/style.scss
+
+  Pre-Render Hooks: assets/css/style.scss
+
+  Rendering Markup: assets/css/style.scss
+
+           Writing: /github/workspace/_site/assets/css/style.css
+
+                    done in 1.747 seconds.
+
+ Auto-regeneration: disabled. Use --watch to enable.
+
+1s
+
+Run actions/upload-pages-artifact@v0
+
+Run tar \
+
+./
+
+./assets/
+
+./assets/css/
+
+./assets/css/style.css
+
+./test
+
+./Version History.txt
+
+Run actions/upload-artifact@main
+
+With the provided path, there will be 1 file uploaded
+
+Starting artifact upload
+
+For more detailed logs during the artifact upload process, enable step-debugging: https://docs.github.com/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging#enabling-step-debug-logging
+
+Artifact name is valid!
+
+Container for artifact "github-pages" successfully created. Starting upload of file(s)
+
+Total size of all the files uploaded is 11986 bytes
+
+File upload process has finished. Finalizing the artifact upload
+
+Artifact has been finalized. All files have been successfully uploaded!
+
+The raw size of all the files that were specified for upload is 81920 bytes
+
+The size of all the files that were uploaded is 11986 bytes. This takes into account any gzip compression used to reduce the upload size, time and storage
+
+Note: The size of downloaded zips can differ significantly from the reported size. For more information see: https://github.com/actions/upload-artifact#zipped-artifact-downloads 
+
+Artifact github-pages has been successfully uploaded!
+
+0s
+
+Post job cleanup.
+
+/usr/bin/git version
+
+git version 2.37.2
+
+Temporarily overriding HOME='/home/runner/work/_temp/77d8e057-027c-40e9-be57-2400748e4ae0' before making global git config changes
+
+Adding repository directory to the temporary git global config as a safe directory
+
+/usr/bin/git config --global --add safe.directory /home/runner/work/test/test
+
+/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+
+/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+
+/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+
+http.https://github.com/.extraheader
+
+/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+
+/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+
+0s
+
+Cleaning up orphan processes
+
+1s
+
+Current runner version: '2.296.0'
+
+Operating System
+
+  Ubuntu
+
+  20.04.4
+
+  LTS
+
+Runner Image
+
+  Image: ubuntu-20.04
+
+  Version: 20220821.1
+
+  Included Software: https://github.com/actions/runner-images/blob/ubuntu20/20220821.1/images/linux/Ubuntu2004-Readme.md
+
+  Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu20%2F20220821.1
+
+Runner Image Provisioner
+
+  1.0.0.0-main-20220812-3
+
+GITHUB_TOKEN Permissions
+
+  Contents: read
+
+  Metadata: read
+
+  Pages: write
+
+Secret source: Actions
+
+Prepare workflow directory
+
+Prepare all required actions
+
+Getting action download info
+
+Download action repository 'actions/deploy-pages@v1' (SHA:114f9cc1f8e24d8f64390960ea709a5a19d09b39)
+
+7s
+
+Run actions/deploy-pages@v1
+
+  with:
+
+    emit_telemetry: false
+
+    token: ***
+
+    timeout: 600000
+
+    error_count: 10
+
+    reporting_interval: 5000
+
+    artifact_name: github-pages
+
+Actor: github-pages[bot]
+
+Action ID: 2941827889
+
+Artifact URL: https://pipelines.actions.githubusercontent.com/rauqi4oTdjpUuaJOKFO51fzPGK9spN3Ph7bZUsrJQGtVNGePKm/_apis/pipelines/workflows/2941827889/artifacts?api-version=6.0-preview
+
+{"count":1,"value":[{"containerId":213631,"size":81920,"signedContent":null,"fileContainerResourceUrl":"https://pipelines.actions.githubusercontent.com/rauqi4oTdjpUuaJOKFO51fzPGK9spN3Ph7bZUsrJQGtVNGePKm/_apis/resources/Containers/213631","type":"actions_storage","name":"github-pages","url":"https://pipelines.actions.githubusercontent.com/rauqi4oTdjpUuaJOKFO51fzPGK9spN3Ph7bZUsrJQGtVNGePKm/_apis/pipelines/1/runs/1/artifacts?artifactName=github-pages","expiresOn":"2022-08-29T05:19:28.5162363Z","items":null}]}
+
+Creating deployment with payload:
+
+{
+
+	"artifact_url": "https://pipelines.actions.githubusercontent.com/rauqi4oTdjpUuaJOKFO51fzPGK9spN3Ph7bZUsrJQGtVNGePKm/_apis/pipelines/1/runs/1/artifacts?artifactName=github-pages&%24expand=SignedContent",	"pages_build_version": "22c4920e7fd0f29f6c0307dd7564dd09042284aa",
+
+	"oidc_token": "***"
+
+}
+
+Created deployment for 22c4920e7fd0f29f6c0307dd7564dd09042284aa
+
+{"page_url":"https://swk3087.github.io/test/","status_url":"https://api.github.com/repos/swk3087/test/pages/deployment/status/22c4920e7fd0f29f6c0307dd7564dd09042284aa","preview_url":""}
+
+Reported success!
+
+0s
+
+Evaluate and set environment url
+
+Evaluated environment url: https://swk3087.github.io/test/
+
+Cleaning up orphan processes
